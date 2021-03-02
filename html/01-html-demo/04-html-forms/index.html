@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+</head>
+
+<body>
+    <!-- Action - when used, where the data is sent -->
+    <!-- Method - how said information is passed -->
+    <!-- GET - data passed to URL or request -->
+    <!-- POST - information passed in the message/body of the request -->
+    <form style="text-align: center" method="GET" action="">
+        <legend>Caption</legend>
+        <br />
+        <!-- Used to enclose in border -->
+        <fieldset>
+            <!-- set our input type, reference caption and placeholder -->
+            <input type="text" name="userName" placeholder="Please enter your usename" />
+            <br />
+            <input type="text" name="passWord" placeholder="please enter your password" style="width: 100" />
+            <br />
+            <input type="text" name="email" placeholder="please enter your email" />
+            <br />
+            <br />
+            <!-- Submit or "send" our data using the action  -->
+            <button type="submit">Send data</button>
+            <!-- Reset our fields  -->
+            <button type="reset">Reset</button>
+
+        </fieldset>
+        <br>
+        <!-- Using a radio type input, we specify a name to link the radio buttons together -->
+
+        <input type="radio" id="lHand" value="left" name="hand"> </input>
+        <!-- We make the label below to associate with the above input using "for" -->
+        <label for="lhand"> Left Hand</label>
+        <!-- The value here will define the associated input sent on submit-->
+        <input type="radio" id="rHand" value="right" name="hand"> Right Hand </input>
+        <input type="radio" id="both" value="both" name="hand"> Can use hands </input>
+        <!-- If all selection choices are left unchecked, no data is sent to the action. -->
+
+<!-- 
+    Whening using input "value":
+    For "button", "reset", and "submit" - it defines the text on the button
+    For "text", "password", and "hidden" - it defines the initial (default) value of the input field
+    For "checkbox", "radio", "image" - it defines the value associated with the input (this is also the value that is sent on submit)
+    Value can't be used with "file"
+    https://www.w3schools.com/tags/att_input_value.asp
+-->
+
+        <br>
+
+        <input type="checkbox"> One </input>
+        <input type="checkbox"> Two </input>
+        <input type="checkbox"> Three </input>
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* 
+a {
+    color: black;
+}
+a:hover { 
+ color: aqua !important;
+}
+
+a:active {
+color: blueviolet !important;
+}
+
+a:visited {
+color: green;
+} */
+
+/* a[href^="https"] {
+    color: black;
+} */
+
+/* a[href$=".com"] {
+    color: green;
+} */
+
+a[href*="google"] {
+    color: blue !important;
+}
+
+.new {
+    height: 300px;
+    width: 100px;
+    overflow: scroll;
+}
+
+
+
